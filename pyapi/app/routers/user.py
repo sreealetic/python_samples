@@ -20,7 +20,7 @@ def get_users(db: Session = Depends(get_db)):
         print("no users found")
         return("no users found")
     
-    return {user}
+    return user
 
 
 
